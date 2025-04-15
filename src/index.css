@@ -1,0 +1,72 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 20% 97%;
+    --foreground: 150 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 10% 10%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 355 100% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142 71% 45%;
+    --accent-foreground: 150 10% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .eco-card {
+    @apply bg-card rounded-lg border border-border shadow-sm p-4 transition-all duration-300 hover:shadow-md;
+  }
+  
+  .chart-container {
+    @apply rounded-lg bg-white p-4 shadow-sm;
+  }
+
+  .degradation-low {
+    @apply text-eco-green;
+  }
+  
+  .degradation-medium {
+    @apply text-eco-alert-low;
+  }
+  
+  .degradation-high {
+    @apply text-eco-alert-medium;
+  }
+  
+  .degradation-critical {
+    @apply text-eco-alert-high;
+  }
+}
