@@ -37,13 +37,7 @@ const Dashboard = () => {
             <h2 className="text-xl font-semibold">Humidity: {data.humidity} %</h2>
           </div>
           <div className="mb-4">
-            <h2 className="text-xl font-semibold">Air Quality: {data.airQuality} AQI</h2>
-          </div>
-          <div className="mb-4">
-            <h2 className="text-xl font-semibold">Tree Count: {data.treeCount}</h2>
-          </div>
-          <div className="mb-4">
-            <h2 className="text-xl font-semibold">Degradation: {data.degradation}</h2>
+            <h2 className="text-xl font-semibold">Air Quality: {data.air_quality} AQI</h2>
           </div>
         </div>
       ) : (
