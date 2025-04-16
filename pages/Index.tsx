@@ -9,7 +9,7 @@ const Dashboard = () => {
     // Function to fetch data from the server
     const fetchData = async () => {
       try {
-        const response = await fetch('http://<YOUR_SERVER_IP>:3000/api/data'); // Replace with your actual server IP
+        const response = await fetch('http://192.168.239.104:3000/api/data'); // Replace with your actual server IP
         if (response.ok) {
           const result = await response.json();
           setData(result); // Set the fetched data to the state
